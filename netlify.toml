@@ -1,0 +1,7 @@
+[build]
+  base = "Frontend/fitts-law-app"
+  command = "npm run build"
+  publish = "build"
+
+[build.environment]
+  NODE_VERSION = "18"  # match your local Node version
