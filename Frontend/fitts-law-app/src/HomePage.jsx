@@ -10,11 +10,11 @@ const HomePage = ({ onStart }) => {
         <h2 className={styles["section-title"]}>Course Information</h2>
         <p className={styles["info"]}>
           <strong>Class:</strong> Human Computer Interaction CIS-482 <br />
-          <strong>Professor:</strong> Guario <br />
+          <strong>Professor:</strong> Guarionex Salivia <br />
           <strong>Group Members:</strong> <br />
           - Ubaid Ur Rehman <br />
-          - Michael Belhke <br />
-          - Yu
+          - Yu Nakagawa <br />
+          - Michael Behlke
         </p>
 
         <button className={styles["start-btn"]} onClick={onStart}>
