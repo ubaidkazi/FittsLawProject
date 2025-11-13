@@ -164,7 +164,7 @@ const FittsLawTest = () => {
         onClick={() => {
           setConsented(true);
           console.log("Participant consented.");
-          setTimeout(() => startTrial(), 1000);
+          setTimeout(() => startTrial(), 50);
         }}
         className={styles.consentButton}
       >
