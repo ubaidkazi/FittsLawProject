@@ -11,12 +11,12 @@ const FittsLawTest = () => {
   const [results, setResults] = useState([]);
 
   // Experiment parameters
-//   const diameters = [20, 40, 60, 80];
-    const diameters = [20,40];
-//   const distances = [100, 200, 300, 400];
-const distances = [100, 200];
-//   const directions = ["left", "right"];
-const directions = ["left"]
+  const diameters = [20, 40, 60, 80];
+    // const diameters = [20,40];
+  const distances = [100, 200, 300, 400];
+// const distances = [100, 200];
+  const directions = ["left", "right"];
+// const directions = ["left"]
 
   // Generate all 32 tasks (4x4x2)
   const allTrials = useMemo(() => {
@@ -119,7 +119,7 @@ const directions = ["left"]
     setCurrentTrial((prev) => prev + 1);
 
     // Move to next trial after delay
-    setTimeout(() => startTrial(), 700);
+    setTimeout(() => startTrial(), 50);
   };
 
 
@@ -179,7 +179,7 @@ return (
     {feedback && <div className={styles.feedback}>{feedback}</div>}
 
     <div className={styles.trialInfo}>
-      Block {block}/10 | Trial {currentTrial + 1}/32
+      Session {block}/10 | Trial {currentTrial + 1}/32
     </div>
 
     {target && (
@@ -197,8 +197,10 @@ return (
     {!target && feedback.includes("Starting block") && (
       <div className={styles.nextBlockContainer}>
         <button onClick={startTrial} className={styles.nextBlockButton}>
-          Begin Block {block}
+          Begin Session {block}
         </button>
+        <br></br>
+        <p> Feel free to take a break between sessions </p>
       </div>
     )}
   </div>
