@@ -9,6 +9,10 @@
   height: 100vh;
   text-align: center;
   color: black;
+
+
+  width: 100vw;
+  /* background-color: red; */
 }
 
 .title {
@@ -20,7 +24,8 @@
 
 .description {
   margin-bottom: 1rem;
-  width: 66%;
+  max-width: 56%;
+
 }
 
 .consentButton {
@@ -43,6 +48,16 @@
   height: 100vh;
   background-color: #f3f4f6;
   overflow: hidden;
+
+  /* background-color: red; */
+}
+
+.exit-exp
+{
+  color: black;
+  padding: 1rem;
+  cursor: pointer;
+  font-weight: 600;
 }
 
 /* Feedback text */

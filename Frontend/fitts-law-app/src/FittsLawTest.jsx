@@ -181,6 +181,7 @@ return (
     <div className={styles.trialInfo}>
       Session {block}/10 | Trial {currentTrial + 1}/32
     </div>
+    <div className={styles["exit-exp"]} onClick={()=>setConsented(false)}>Exit Experiment </div>
 
     {target && (
       <div

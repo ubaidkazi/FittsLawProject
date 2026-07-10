@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./HomePage.module.css"; // 👈 CSS Module import
 
-const HomePage = ({ onStart }) => {
+const HomePage = ({ onStart, OnClose }) => {
   return (
     <div className={styles["homepage"]}>
       <h1 className={styles["homepage-title"]}>Fitts’ Law Experiment Project</h1>
